@@ -1,0 +1,54 @@
+<h1 class="text-center  mt-3">Detalle Producto {{this.title}}</h1>
+
+{{#if product}}
+        {{!-- <div class="row">
+            <div class="card m-3 text-center p-3" >
+                <div class="col">
+                <img src={{product.thumbnail}} style="max-width: 15rem" alt="producto"/>
+                </div>
+                <div class="col card-body">
+                    <h5 class="card-title">{{product.title}}</h5>
+                    <p class="card-text">$ {{product.price}}</p>
+                    <a href="#" class="btn btn-primary" style="width: 6rem">Comprar</a>
+                </div>
+            </div>
+         </div> --}}
+
+<div class="card m-3" >
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src={{product.thumbnail}}  class="card-img"  style="max-width: 15rem" alt={{product.title}}>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <p class="card-title"><b>Producto:</b>  {{product.title}}</p>
+        <p class="card-text"><b>Código:</b>      {{product.code}}</p>
+        <p class="card-text"><b>Descripción:</b> {{product.description}}</p>
+        <p class="card-text"><b>Status:</b>      {{product.status}}</p>
+        <p class="card-text"><b>Stock:</b>       {{product.stock}}</p>
+        <p class="card-text"><b>Categoría:</b>   {{product.category}}</p>
+        <a href="#" class="btn btn-primary" style="width: 6rem">Comprar</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+    {{else}}
+    <p>No se encontraron datos</p>
+{{/if}}
+
+
+
+
+
+
+
+
+
+
+<div class="text-center">
+    <a href="/products" class="btn btn-danger" > <-- Listado de Productos</a>
+</div>

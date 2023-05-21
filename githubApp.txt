@@ -1,0 +1,15 @@
+CoderAppDrixar
+
+http://localhost:8080/sessions/githubCallback
+
+Owned by: @Drixar
+
+App ID: 336566
+
+Client ID: Iv1.e382288e684d55c7
+
+Client Secret: 688e8dd089bed1e24ef75a8acd2a0b0380ba8972
+
+
+adminCoder@coder.com
+adminCod3r123

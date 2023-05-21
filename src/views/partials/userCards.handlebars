@@ -1,0 +1,19 @@
+<div class="row row-cols-1 row-cols-md-3 g-4">
+   {{#each products}}
+  <div class="col">
+    <div class="card">
+      <img src={{this.thumbnail}} class="card-img-top img-fluid" alt="producto"/>
+      <div class="card-body">
+        <h5 class="card-title">{{this.title}}</h5>
+        <p class="card-text">{{this.price}}</p>
+        <a href="/productos/detalle/{{this.id}}" class="btn btn-primary">Detalles</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+    {{/each}}
+</div>

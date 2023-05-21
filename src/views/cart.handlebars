@@ -1,0 +1,20 @@
+<h1 class="text-center mt-3">Carrito {{id}}</h1>
+
+{{!-- {{> form}} --}}
+{{#if products}}
+        {{> cardsCarrito}}
+     {{!-- <div id="productsContainer"></div> --}}
+    {{else}}
+    <p>No se encontraron datos</p>
+{{/if}}
+
+{{!-- <div class="text-center">
+    {{#if prev}}
+	<a href="/products/?limit={{limit}}&page={{prev}}&sort{{sort}}" class="btn btn-dark" >Anterior</a>
+    {{/if}}
+      <button onclick="#" class="btn btn-primary">{{page}}</button>
+        {{#if next}}
+	<a href="/products/?limit={{limit}}&page={{next}}&sort{{sort}}" class="btn btn-dark" >Siguiente</a>
+    {{/if}}
+</div> --}}
+{{!-- <script src='home.js'type="text/javascript"></script> --}}

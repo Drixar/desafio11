@@ -1,0 +1,12 @@
+<h1 class="text-center mt-3">Ingrese datos</h1>
+
+{{!-- {{> form}} --}}
+{{#if products}}
+    {{> userCards}}
+    {{else}}
+    <p>No se encontraron datos</p>
+{{/if}}
+
+<div class="text-center">
+	<a href="/productos/add" class="btn btn-dark" >Agregar Producto</a>
+</div>

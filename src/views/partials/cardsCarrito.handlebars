@@ -1,0 +1,39 @@
+{{!-- <div class="row row-cols-1 row-cols-md-3 g-4">
+   {{#each products}}
+  <div class="col">
+    <div class="card">
+      <img src={{this.product.thumbnail}} class="img-card" alt="producto"/>
+      <div class="card-body">
+        <h5 class="card-title">{{this.product.title}}</h5>
+        <p class="card-text">cantidad: {{this.quantity}}</p>
+        <a href="/products/{{this.id}}" class="btn btn-primary">Detalles</a>
+      </div>
+    </div>
+  </div>
+    {{/each}}
+</div>
+ --}}
+
+
+<div class="row d-flex justify-content-center">
+   {{#each products}}
+  <div class="col-md-3">
+    <div class="card m-3 text-center p-3" >
+    {{!-- <div class="row g-0"> --}}
+      <div class="col-md-12">
+        <img src={{this.product.thumbnail}} class="img-fluid rounded-start" style="max-width: 5rem" alt={{this.product.title}}>
+      {{!-- </div> --}}
+      {{!-- <div class="col-md-12"> --}}
+        <div class="card-body">
+          <h5 class="card-title">{{this.product.title}}</h5>
+          <p class="card-text">{{this.product.description}}</p>
+          <p class="card-text"><small class="text-muted">Precio: ${{this.product.price}}</small></p>
+          <p class="card-text">cantidad: {{this.quantity}}</p>
+          <a href="/products/{{this.product.id}}" class="btn btn-primary"  style="width: 6rem">Detalles</a>
+        </div>
+      {{!-- </div> --}}
+    </div>
+    </div>
+  </div>
+    {{/each}}
+</div>

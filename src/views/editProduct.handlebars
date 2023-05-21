@@ -1,0 +1,30 @@
+<h1 class="text-center  mt-3">Detalle Producto {{this.title}}</h1>
+
+{{#if product}}
+<form action='/productos/{{product.id}}' method='post' class='container col-sm-8'>
+
+  <div class='mb-3'>
+    <label for='title' class='form-label'>Title</label>
+    <input type='text' class='form-control' id='name' name='title' value={{product.title}} required />
+  </div>
+
+  <div class='mb-3'>
+    <label for='price' class='form-label'>Price</label>
+    <input type='text' class='form-control' id='price' name='price' value={{product.price}} required />
+  </div>
+  <div class='mb-3'>
+    <label for='thumbnail' class='form-label'>Thumbnail</label>
+    <input type='text' class='form-control' id='thumbnail' name='thumbnail' value={{product.thumbnail}} required />
+  </div>
+
+  <button type='submit' class='btn btn-primary'>Submit</button>
+
+</form>
+    {{else}}
+    <p>No se encontraron datos</p>
+{{/if}}
+
+
+<div class="text-center">
+    <a href="/productos" class="btn btn-danger" > <-- Home</a>
+</div>

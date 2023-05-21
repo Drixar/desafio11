@@ -1,0 +1,39 @@
+{{#if user}}
+  <div class='alert alert-primary alert-dismissible fade show'>
+    <h1 id='mensaje'>Hasta Luego {{user}}</h1>
+  </div>
+{{/if}}
+
+<div class='container mt-4'>
+  <div class='card' style='width: 18rem;'>
+    <div class='card-header'>Login Form</div>
+    <div class='card-body'>
+      <form action='/sessions/login' method='POST'>
+        <div class='mb-3'>
+          <label for='email' class='form-label'>Email</label>
+          <input
+            type='email'
+            class='form-control'
+            id='email'
+            name='email'
+            placeholder='Ingrese su e-mail'
+          />
+        </div>
+        <div class='mb-3'>
+          <label for='password' class='form-label'>Password</label>
+          <input
+            type='password'
+            class='form-control'
+            id='password'
+            name='password'
+            placeholder='Ingrese su password'
+          />
+        </div>
+        <button type='submit' class='btn btn-primary'>Submit</button>
+      </form>
+    </div>
+  </div>
+  <div>
+    <a href='/sessions/github'>Entrar con Github</a>
+  </div>
+</div>
