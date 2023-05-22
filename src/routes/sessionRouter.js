@@ -71,7 +71,6 @@ router.get('/githubCallback',
     passport.authenticate('github', { failureRedirect: '/login' }),
 
     async (req, res) => {
-      console.log(req.user)
       req.session.user = {
         displayName: req.user.displayName,
         username: req.user.username,

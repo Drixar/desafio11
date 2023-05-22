@@ -3,11 +3,11 @@ import mongoose from "mongoose";
 const usersCollection = "users";
 
 const userSchema = new mongoose.Schema({
-    displayName: {
+    firstName: {
         type:String,
-        required: true
+        // required: true
     },
-    username: {
+    lastName: {
         type:String,
         // required: true
     },
@@ -25,7 +25,7 @@ const userSchema = new mongoose.Schema({
     },
     role:{
         type:String,
-        // required:true
+        required:true
     }
 });
 
